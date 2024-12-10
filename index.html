@@ -5,18 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prework Study Guide</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f0f8ff;
+      }
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #ff6347;
+        color: white;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      .info-button {
+        position: relative;
+        border: none;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px;
+        width: 200px;
+        background-color: #4682b4;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .info-button:hover .info {
+        display: block;
+      }
+      .info {
+      
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #ff6347;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <button class="info-button">
+        HTML
+        <div class="info">
+          <ul>
+            <li>HTML stands for HyperText Markup Language.</li>
+            <li>It is used to structure a web page and its content.</li>
+          </ul>
+        </div>
+      </button>
+      <button class="info-button">
+        CSS
+        <div class="info">
+          <ul>
+            <li>CSS stands for Cascading Style Sheets.</li>
+            <li>It is used to style and layout web pages.</li>
+          </ul>
+        </div>
+      </button>
+      <button class="info-button">
+        Git
+        <div class="info">
+          <ul>
+            <li>Git is a version control system.</li>
+            <li>It helps track changes in source code during software development.</li>
+          </ul>
+        </div>
+      </button>
+      <button class="info-button">
+        JavaScript
+        <div class="info">
+          <ul>
+            <li>JavaScript is a programming language.</li>
+            <li>It is used to create dynamic and interactive effects on web pages.</li>
+          </ul>
+        </div>
+      </button>
     </main>
-
     <footer>
-      <p>I can code!</p>
+      <p>Prework Study Guide &copy;2024</p>
     </footer>
   </body>
 </html>
